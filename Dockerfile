@@ -1,3 +1,4 @@
 FROM node:alpine
 #RUN sleep 300
-CMD echo "going to sleep" 
+COPY /scripts.sh .
+CMD ["sh","scripts.sh"]
